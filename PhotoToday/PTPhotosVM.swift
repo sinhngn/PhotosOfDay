@@ -55,7 +55,7 @@ class PTPhotosVM: PTBaseVM {
         let item = self.gallery.items[safe: index.row]
         
         if (item != nil) {
-            return ("fullsize: " + (item!.title), item!.imageURLsize(.s2048))
+            return (item!.title, item!.imageURLsize(.s2048))
         }
         
         return ("", "")
