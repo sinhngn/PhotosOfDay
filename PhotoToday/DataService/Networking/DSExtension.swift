@@ -77,17 +77,6 @@ extension String {
         
         return defaultNumber
     }
-    
-    /// Get month
-    func getMonthNow() -> String {
-        let now = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM"
-        let nameOfMonth = dateFormatter.string(from: now)
-        return nameOfMonth
-    }
-    
-
 }
 
 extension Collection where Indices.Iterator.Element == Index {

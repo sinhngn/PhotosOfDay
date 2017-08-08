@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum FormatDateString: String {
+    case year_month = "yyyy-MM"
+    case year_month_dd = "yyyy-MM-dd"
+}
+
 class PTPhotosVM: PTBaseVM {
     
     //public
@@ -56,11 +61,12 @@ class PTPhotosVM: PTBaseVM {
         return ("", "")
     }
     
-    //for previous item
+    /// for previous item
     func previousItem() -> (title: String, url: String) {
         return ("", self.gallery.previousEndpoint)
     }
     
+    /// Action fot Item Previos
     public func previousItemGetData() {
         var url = self.gallery.previousEndpoint.components(separatedBy: ".")
         url.removeLast()
@@ -71,11 +77,12 @@ class PTPhotosVM: PTBaseVM {
         }
     }
     
-    //for next item
+    // for next item
     func nextItem() -> (title: String, url: String) {
         return ("", self.gallery.nextEndpoint)
     }
     
+    /// Action next Item
     public func nextItemGetData() {
         var url = self.gallery.nextEndpoint.components(separatedBy: ".")
         url.removeLast()
@@ -84,5 +91,14 @@ class PTPhotosVM: PTBaseVM {
         if query != "" {
             apiPhotosOfDay(date: query)
         }
+    }
+    
+    /// Get month
+    func getDateNow(format: FormatDateString) -> String {
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format.rawValue
+        let nameOfMonth = dateFormatter.string(from: now)
+        return nameOfMonth
     }
 }
