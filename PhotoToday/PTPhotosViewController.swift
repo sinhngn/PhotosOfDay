@@ -61,6 +61,8 @@ extension PTPhotosViewController {
             self.collectionvView.reloadData()
         }
         
+        
+        
         vm.apiPhotosOfDay(date: "2017-07")
     }
 }

@@ -23,12 +23,6 @@ extension UIStoryboard {
         return vc
     }
     
-    class func photosInMonthViewController() -> PTPhotosInMonthViewController {
-        let vc = UIStoryboard.name(type: .Main,
-                                   indentifier: "PTPhotosInMonthViewController") as! PTPhotosInMonthViewController
-        return vc
-    }
-
     //MARK: - Overal
     class func name(type: StoryboardName, indentifier: String) -> UIViewController {
         let sb = UIStoryboard.name(type: type);
