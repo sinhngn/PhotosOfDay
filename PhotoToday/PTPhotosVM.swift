@@ -98,6 +98,7 @@ class PTPhotosVM: PTBaseVM {
         let now = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue
+        
         let nameOfMonth = dateFormatter.string(from: now)
         return nameOfMonth
     }
