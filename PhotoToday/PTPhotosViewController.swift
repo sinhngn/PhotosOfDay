@@ -8,12 +8,6 @@
 
 import UIKit
 
-//The interface for PTPhotosViewModel
-protocol PTPhotosViewControllerProtocol {
-    func previousItem() -> (title: String, url: String)
-    func nextItem() -> (title: String, url: String)
-}
-
 class PTPhotosViewController: BaseViewController {
 
     @IBOutlet weak var collectionvView: UICollectionView!
@@ -88,8 +82,7 @@ extension PTPhotosViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = vm.itemAt(index: indexPath)
-        let celltemp = collectionView.dequeueReusableCell(withReuseIdentifier: PTPhotoItemCollectionViewCell.name,
-                                                          for: indexPath)
+        let celltemp = collectionView.dequeueReusableCell(withReuseIdentifier: PTPhotoItemCollectionViewCell.name, for: indexPath)
         
         if let cell = celltemp as? PTPhotoItemCollectionViewCell {
             cell.setupData(title: item.title, urlImage: item.urlImage)

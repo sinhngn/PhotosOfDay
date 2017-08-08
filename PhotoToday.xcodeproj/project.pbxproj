@@ -15,7 +15,6 @@
 		4F4371F41F2B95550050D31C /* DSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4371F21F2B95550050D31C /* DSExtension.swift */; };
 		4F4371F51F2B95550050D31C /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4371F31F2B95550050D31C /* HttpUtility.swift */; };
 		4F4371F71F2BAB100050D31C /* PTPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4371F61F2BAB100050D31C /* PTPhotosViewController.swift */; };
-		4F4371F91F2BAC090050D31C /* PTPhotosInMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4371F81F2BAC090050D31C /* PTPhotosInMonthViewController.swift */; };
 		4F4371FB1F2BACB10050D31C /* StoryBoardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4371FA1F2BACB10050D31C /* StoryBoardExtension.swift */; };
 		4F6245281F299891003877BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6245271F299891003877BE /* AppDelegate.swift */; };
 		4F62452A1F299891003877BE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6245291F299891003877BE /* BaseViewController.swift */; };
@@ -40,7 +39,6 @@
 		4F4371F21F2B95550050D31C /* DSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSExtension.swift; sourceTree = "<group>"; };
 		4F4371F31F2B95550050D31C /* HttpUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
 		4F4371F61F2BAB100050D31C /* PTPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPhotosViewController.swift; sourceTree = "<group>"; };
-		4F4371F81F2BAC090050D31C /* PTPhotosInMonthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPhotosInMonthViewController.swift; sourceTree = "<group>"; };
 		4F4371FA1F2BACB10050D31C /* StoryBoardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardExtension.swift; sourceTree = "<group>"; };
 		4F6245241F299891003877BE /* PhotoToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6245271F299891003877BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				4F6245271F299891003877BE /* AppDelegate.swift */,
 				4F4371F61F2BAB100050D31C /* PTPhotosViewController.swift */,
 				4F303ED41F30BF40009B4E39 /* PTPhotosVM.swift */,
-				4F4371F81F2BAC090050D31C /* PTPhotosInMonthViewController.swift */,
 			);
 			path = PhotoToday;
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				4F4371F51F2B95550050D31C /* HttpUtility.swift in Sources */,
 				4F6245471F29A5FC003877BE /* DSBaseService.swift in Sources */,
 				4F62454A1F29A6B9003877BE /* DSBaseModel.swift in Sources */,
-				4F4371F91F2BAC090050D31C /* PTPhotosInMonthViewController.swift in Sources */,
 				4F62452A1F299891003877BE /* BaseViewController.swift in Sources */,
 				4F4371FB1F2BACB10050D31C /* StoryBoardExtension.swift in Sources */,
 				4F4371EE1F2B95030050D31C /* DSUserService.swift in Sources */,
