@@ -1,11 +1,22 @@
-# PhotosOfDay
+# PhotosOfDay Demo APP
+##
+###Introduction
 
-#Setup 
-pod install
+A Demo for DataService and MVVM. Dataservice is place where include all Service, Config, API... It makes connections to server, parse json data, output are models. With MVVM is a structure, everybody can search them on the internet.
 
-Demo for DataService 
+--- 
+###Setup
+* Git clone or download source code
+* pod install
 
-improve everyday... :Đ 
+---
+###Description
+#####Architecture
+![alt text](./doc/img.jpg "Architecture")
+#####Other Framework
+1. Alamofire 4.4
+2. SDWebImage 4.0
 
-DataService and MVVM
-Data from: http://www.nationalgeographic.com
+---
+###Reference
+[National Geogracphic](http://www.nationalgeographic.com)
