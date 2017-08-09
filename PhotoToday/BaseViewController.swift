@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class BaseViewController: UIViewController {
 
@@ -20,6 +21,16 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func showLoadingView() {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 20.0, execute: {
+            self.hideLoadingView()
+        })
+    }
+    
+    func hideLoadingView() {
+        MBProgressHUD.hide(for: self.view, animated: true)
+    }
 }
 

@@ -5,6 +5,7 @@ use_frameworks!
 target 'PhotoToday' do
    pod 'Alamofire', '~> 4.4'
    pod 'SDWebImage', '~> 4.0'
+   pod 'MBProgressHUD', '~> 1.0.0'
 end
 
 
