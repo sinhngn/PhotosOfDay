@@ -38,8 +38,9 @@ class PTPhotosViewController: BaseViewController {
     
     @IBAction func buttonTouchUpInside(_ sender: UIButton) {
         
-        //scroll to top
+        // scroll to top
         self.collectionvView.setContentOffset(CGPoint.zero, animated: false)
+        // show loading view
         self.showLoadingView()
         
         if sender == self.btnNext {
