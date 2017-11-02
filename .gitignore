@@ -30,7 +30,9 @@ DerivedData
 ## Other
 *.moved-aside
 *.xcuserstate
+
 *.xcworkspace
+
 
 
 Carthage

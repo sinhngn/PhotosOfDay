@@ -61,9 +61,9 @@ class PTPhotosViewController: BaseViewController {
 extension PTPhotosViewController {
    
     func requestData() {
-        self.showLoadingView()
-    
-        vm.needUpdate = {res in
+
+        vm.needUpdate = { (bool,a,b) in
+            self.showLoadingView()
             self.updateUI()
             self.collectionvView.reloadData()
             self.hideLoadingView()

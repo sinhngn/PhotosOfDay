@@ -38,7 +38,7 @@ class DSErrorModel: DSBaseModel {
     static func errorParse(addrFunc: String? = "") -> DSErrorModel {
         let code: String        = String(SDErrorCode.parseErrorLocal.rawValue)
         let message: String     = "Please, Check response from API"
-        let description: String = "Error from \(addrFunc). You should check it."
+        let description: String = "Error from \(String(describing: addrFunc)). You should check it."
         let model = DSErrorModel.make(code: code,
                                       message: message,
                                       description: description)

@@ -83,7 +83,7 @@ class HttpUtility: NSObject {
                 rq.onSuccess?(json)
            
             case .failure(let error):
-                let httpCode: String  = "\(res.response?.statusCode)"
+                let httpCode: String  = "\(String(describing: res.response?.statusCode))"
                 let message: String  = error.localizedDescription
                 let dsError = DSErrorModel.make(code: httpCode,
                                                 message: message,
@@ -100,9 +100,9 @@ class HttpUtility: NSObject {
         if DSConfig.isShowLog == true {
             print("------------ API_LOG ----------")
             print("- Request Counting: \(HttpUtility.requestCounting)")
-            print("- Request url: \(request.request?.url?.absoluteString)")
+            print("- Request url: \(String(describing: request.request?.url?.absoluteString))")
             print("- Cached: \(rq.cachePolicy)")
-            print("- Query: \(rq.parameters?.description)")
+            print("- Query: \(String(describing: rq.parameters?.description))")
             print("-------------------------------")
         }
     }
