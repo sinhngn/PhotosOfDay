@@ -10,5 +10,6 @@
 #define BridgingHeader_h
 
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #endif /* BridgingHeader_h */

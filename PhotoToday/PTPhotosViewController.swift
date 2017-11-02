@@ -38,6 +38,11 @@ class PTPhotosViewController: BaseViewController {
     
     @IBAction func buttonTouchUpInside(_ sender: UIButton) {
         
+        // scroll to top
+        self.collectionvView.setContentOffset(CGPoint.zero, animated: false)
+        // show loading view
+        self.showLoadingView()
+        
         if sender == self.btnNext {
             vm.nextItemGetData()
         }
@@ -56,9 +61,12 @@ class PTPhotosViewController: BaseViewController {
 extension PTPhotosViewController {
    
     func requestData() {
+
         vm.needUpdate = { (bool,a,b) in
+            self.showLoadingView()
             self.updateUI()
             self.collectionvView.reloadData()
+            self.hideLoadingView()
         }
         
         vm.apiPhotosOfDay(date: vm.getDateNow(format: .year_month))
@@ -114,7 +122,7 @@ class PTPhotoItemCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate{
         self.lblTitle.text = title
         
         scrollView.minimumZoomScale = 1.0
-        scrollView.maximumZoomScale = 6.0
+        scrollView.maximumZoomScale = 10.0
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
