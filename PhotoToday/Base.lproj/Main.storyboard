@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eiS-sd-RqQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eiS-sd-RqQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,10 +54,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SD-O0-Cky">
-                                        <rect key="frame" x="165" y="3" width="44" height="44"/>
+                                        <rect key="frame" x="97.5" y="3" width="179" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Dyc-Bd-NS5"/>
-                                            <constraint firstAttribute="width" constant="44" id="wsk-Ge-oXU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="tintColor" red="0.96891373483506449" green="0.97228588706379837" blue="0.98240234375000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -97,10 +96,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="6Tu-KH-6ay">
-                                                    <rect key="frame" x="8" y="8" width="359" height="510"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWQ-mY-NlY">
-                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="509"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="525"/>
                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </imageView>
                                                     </subviews>
@@ -117,7 +116,7 @@
                                                     </connections>
                                                 </scrollView>
                                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ex-6P-O1e">
-                                                    <rect key="frame" x="0.0" y="518" width="375" height="21"/>
+                                                    <rect key="frame" x="0.0" y="526" width="375" height="21"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="lcd-UY-jp8"/>
@@ -130,11 +129,11 @@
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailingMargin" secondItem="6Tu-KH-6ay" secondAttribute="trailing" id="1Hg-On-2cn"/>
-                                            <constraint firstItem="5ex-6P-O1e" firstAttribute="leading" secondItem="ARA-B2-f0N" secondAttribute="leading" id="3dq-z1-Xam"/>
-                                            <constraint firstAttribute="trailing" secondItem="5ex-6P-O1e" secondAttribute="trailing" id="Bj9-ag-BHY"/>
+                                            <constraint firstItem="5ex-6P-O1e" firstAttribute="leading" secondItem="ARA-B2-f0N" secondAttribute="leading" id="Iby-rz-Aff"/>
                                             <constraint firstItem="6Tu-KH-6ay" firstAttribute="top" secondItem="ARA-B2-f0N" secondAttribute="topMargin" id="J1k-FA-79D"/>
                                             <constraint firstItem="5ex-6P-O1e" firstAttribute="centerX" secondItem="6Tu-KH-6ay" secondAttribute="centerX" id="KR4-IN-fXd"/>
                                             <constraint firstItem="5ex-6P-O1e" firstAttribute="top" secondItem="6Tu-KH-6ay" secondAttribute="bottom" id="ROq-RB-CE0"/>
+                                            <constraint firstAttribute="trailing" secondItem="5ex-6P-O1e" secondAttribute="trailing" id="iKH-We-d09"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="5ex-6P-O1e" secondAttribute="bottom" id="rug-ul-yzl"/>
                                         </constraints>
                                         <size key="customSize" width="375" height="547"/>
@@ -227,7 +226,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eiS-sd-RqQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="st6-4D-YOD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
